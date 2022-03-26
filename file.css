@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.page {
+  margin-top: 80px;
+  font-size: 30px;
+}
+h2 {
+  font-size: 70px;
+}
+button {
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px solid green;
+  width: 20%;
+  height: 40px;
+  background: green;
+  padding: 7px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+a {
+  cursor: pointer;
+  pointer-events: all;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  /* padding: 5px auto; */
+  font-weight: bolder;
+}
+#player1{
+  max-width: 1300px;
+  width: 100%;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.submit{
+  width: 100px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#submit{
+  width: 100px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#initiate{
+border: 2px black;
+border-radius: 8px;
+background-color: green;
+}
+
+#reselect{
+  border: 0.5px black;
+  border-radius: 8px;
+  background-color: aquamarine;
+}
+
+#battle{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+span{
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px solid green;
+  width: 20%;
+  height: 40px;
+  background: green;
+  padding: 7px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+hr{
+ visibility: hidden;
+}
