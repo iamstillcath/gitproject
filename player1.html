@@ -4,32 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="file.css" />
     <title>player 1</title>
   </head>
   <body class="page">
-    <center>
-    <form autocomplete="off" id="input">
-      <h2>Player One</h2>
-      <div>
-      <input required id="player1" placeholder="Git User" />
-      </div>
-      <button id="submit">continue</button>
-  
-    </form>
-    <main>
+      <form autocomplete="off" id="input" action="player2.html">
+        <h2 class="current_player">Player One</h2>
+        <div>
+          <input required id="player_input" placeholder="Git User" />
+        </div>
+        <button id="submit">Continue</button>
+      </form>
+      <main>
         <section id="first">
-            <div><img id="avatar"></div>
-          <div id="name"></div>
-            <div id="username"></div><hr class="line">
-            <div id="followers"></div><hr class="line">
-            <div id="following"></div><hr class="line">
-            <div id="public"></div>
-            <div id="calc"></div>
+          <div id="player1">
+        <li><img id="avatar" /></li>
+        <li id="name"></li>
+          <li id="username"></li>
+           <li id="followers"></li>
+           <li  id="following"></li>
+          <li id="public"></li>
+          </div>
+          <div id="calc"></div>
         </section>
-    </main>
- 
-  </center>
-    <script src="player1.js"></script>
+      </main>
+    <script src="player.js"></script>
   </body>
 </html>

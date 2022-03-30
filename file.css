@@ -1,38 +1,42 @@
+body {
+  text-align: center;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
-.page {
-  margin-top: 80px;
-  font-size: 30px;
-}
+
 h2 {
   font-size: 70px;
 }
-button {
-  margin-top: 20px;
-  display: inline-block;
-  border: 1px solid green;
-  width: 20%;
-  height: 40px;
-  background: green;
-  padding: 7px auto;
-  border-radius: 10px;
-  cursor: pointer;
-  pointer-events: all;
-}
 
+#reselect {
+  border:2px solid lightblue;
+  border-radius: 8px;
+  background: lightblue;
+}
 a {
   cursor: pointer;
   pointer-events: all;
   color: white;
-  font-size: 20px;
+  max-width: 100px;
+  width: 100%;
   text-decoration: none;
-  /* padding: 5px auto; */
   font-weight: bolder;
+  padding: 10px 5%;
+  border-radius: 10px;
+  text-align: center;
+  
 }
-#player1{
+
+.get {
+  color: green;
+  font-size: 35px;
+}
+
+#player_input {
   max-width: 1300px;
   width: 100%;
   padding: 20px;
@@ -42,43 +46,76 @@ a {
   font-size: 20px;
 }
 
-.submit{
+.submit {
   width: 100px;
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
 
-#submit{
-  width: 100px;
+#submit {
+  margin-top: 20px;
+  max-width: 120px;
+  width: 100%;
   color: white;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
+  border: 1px solid green;
+  background: green;
+  padding: 8px;
+  border-radius: 10px;
 }
 
-#initiate{
-border: 2px black;
-border-radius: 8px;
-background-color: green;
-}
 
-#reselect{
-  border: 0.5px black;
-  border-radius: 8px;
-  background-color: aquamarine;
-}
 
-#battle{
+#battle {
   display: flex;
   justify-content: space-around;
+  max-width: 1500px;
+  width: 100%;
 
 }
 
-span{
-  margin-top: 20px;
+
+#first {
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+  border: 3px solid #f2f2f2;
+}
+
+#player1.show {
+  visibility: visible;
+}
+
+#player1 {
+  visibility: hidden;
+}
+
+#player2.shows {
+  visibility: visible;
+}
+
+#player2 {
+  visibility: hidden;
+}
+
+.page {
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+span {
+  margin-top: 30px;
   display: inline-block;
-  border: 1px solid green;
-  width: 20%;
+  max-width: 200px;
+  width: 100%;
   height: 40px;
   background: green;
   padding: 7px auto;
@@ -86,7 +123,41 @@ span{
   cursor: pointer;
   pointer-events: all;
 }
+#last{
+  margin-top: 80px;
+}
 
-hr{
- visibility: hidden;
+#both{
+  display: flex;
+  justify-content: center;
+}
+#win{
+  font-size: 70px;
+}
+
+#res1{
+  display: inline-block;
+  width: 280px;
+  height: 230px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+#wn, #ls{
+  font-size: 20px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+#btn{
+background-color: green;
+border: 2px solid green;
+border-radius: 10px;
+font-size: 16px;
+margin-top: 110px;
+align-items: center;
+padding: 10px;
+height: 60px;
+max-width: 110px;
+width: 100%;
 }
