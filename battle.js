@@ -13,16 +13,18 @@ const secPlayer = document.querySelector(".secPlayer");
 if (calculat.innerHTML > calculatee.innerHTML) {
   firstPlayer.innerHTML += player1;
   secPlayer.innerHTML += player2;
-  score.innerHTML += calculat;
-  score2.innerHTML += calculatee;
+  score.innerHTML += calculat+"😒";
+  score2.innerHTML += calculatee+"🤣";
 } else {
   secPlayer.innerHTML += player1;
   firstPlayer.innerHTML += player2;
-  score2.innerHTML += calculat;
-  score.innerHTML += calculatee;
+  score2.innerHTML += calculat+"😒";
+  score.innerHTML += calculatee+"🤣";
 }
 
 let avatar = document.querySelectorAll("#avatar");
 for (let i = 0; i < avatar.length; i++) {
   avatar[i].style.width = "50%";
 }
+
+
