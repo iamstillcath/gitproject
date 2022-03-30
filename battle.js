@@ -10,7 +10,7 @@ console.log("calulatee==>", calculatee);
 const firstPlayer = document.querySelector(".firstPlayer");
 const secPlayer = document.querySelector(".secPlayer");
 
-if (calculat < calculatee) {
+if (calculat.innerHTML > calculatee.innerHTML) {
   firstPlayer.innerHTML += player1;
   secPlayer.innerHTML += player2;
   score.innerHTML += calculat;

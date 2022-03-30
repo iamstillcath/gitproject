@@ -24,13 +24,6 @@ form.addEventListener("submit", function (e) {
   playerOne.send(null);
 
   playerOne.onload = function () {
-    if (playerOne.status === 404) {
-      let names = document.getElementById("calc");
-      names.innerHTML = "USER NOT FOUND";
-      names.style.fontSize = "46px";
-      names.style.fontWeight = "bold";
-    }
-
     if (playerOne.status === 200) {
       if (currPlayer.innerText === "Player One") {
         showLi.className = "show";
@@ -61,40 +54,40 @@ form.addEventListener("submit", function (e) {
       for (let i = 0; i < line.length; i++) {
         line[i].style.visibility = "visible";
       }
+
+      if (currPlayer.innerText === "Player One") {
+        localStorage.setItem(
+          "player1",
+          document.getElementById("player1").innerHTML
+        );
+        localStorage.setItem(
+          "calculate",
+          document.getElementById("calc").innerHTML
+        );
+
+        setTimeout(() => {
+          window.location.href = "./player2.html";
+        }, 1000);
+      } else if (currPlayer.innerText === "Player Two") {
+        localStorage.setItem(
+          "player2",
+          document.getElementById("player2").innerHTML
+        );
+        localStorage.setItem(
+          "caculate",
+          document.getElementById("calc").innerHTML
+        );
+
+        setTimeout(() => {
+          window.location.href = "./next.html";
+        }, 1000);
+      }
     } else {
       playerOne.status === 404;
       let names = document.getElementById("calc");
       names.innerHTML = "USER NOT FOUND";
       names.style.fontSize = "46px";
       names.style.fontWeight = "bold";
-    }
-
-    if (currPlayer.innerText === "Player One") {
-      localStorage.setItem(
-        "player1",
-        document.getElementById("player1").innerHTML
-      );
-      localStorage.setItem(
-        "calculate",
-        document.getElementById("calc").innerHTML
-      );
-
-      setTimeout(() => {
-        window.location.href = "./player2.html";
-      }, 1000);
-    } else if (currPlayer.innerText === "Player Two") {
-      localStorage.setItem(
-        "player2",
-        document.getElementById("player2").innerHTML
-      );
-      localStorage.setItem(
-        "caculate",
-        document.getElementById("calc").innerHTML
-      );
-
-      setTimeout(() => {
-        window.location.href = "./next.html";
-      }, 1000);
     }
   };
 });
