@@ -9,7 +9,7 @@ const score2 = document.getElementById("score2");
 const firstPlayer = document.querySelector(".firstPlayer");
 const secPlayer = document.querySelector(".secPlayer");
 
-if (calculat >calculatee) {
+if (+calculat > +calculatee) {
   firstPlayer.innerHTML += player1;
   secPlayer.innerHTML += player2;
   score.innerHTML += calculat+"😒";
@@ -20,6 +20,7 @@ if (calculat >calculatee) {
   score2.innerHTML += calculat+"😒";
   score.innerHTML += calculatee+"🤣";
 }
+
 
 let avatar = document.querySelectorAll("#avatar");
 for (let i = 0; i < avatar.length; i++) {
