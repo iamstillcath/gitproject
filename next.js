@@ -7,8 +7,12 @@ const resultTwo = document.querySelector(".player2_result");
 if (player1 && player2) {
   resultOne.innerHTML = player1;
   resultTwo.innerHTML = player2;
-  let avatar = document.querySelectorAll("#avatar");
-  for (let i = 0; i < avatar.length; i++) {
-   avatar[i].style.width="50%"
-  }
+ 
+}
+let avatar = document.querySelectorAll("#avatar");
+for (let i = 0; i < avatar.length; i++) {
+  avatar[i].style.maxWidth=""
+  avatar[i].style.width="50%";
+//  avatar[i].style.heigth="50%"
+
 }

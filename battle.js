@@ -2,15 +2,14 @@ const player1 = localStorage.getItem("player1");
 const player2 = localStorage.getItem("player2");
 const calculat = localStorage.getItem("calculate");
 const calculatee = localStorage.getItem("caculate");
-const score = document.getElementById("score1");
+const score = document.getElementById("score");
 const score2 = document.getElementById("score2");
-console.log("calculat==>", calculat);
-console.log("calulatee==>", calculatee);
+
 
 const firstPlayer = document.querySelector(".firstPlayer");
 const secPlayer = document.querySelector(".secPlayer");
 
-if (calculat.innerHTML > calculatee.innerHTML) {
+if (calculat >calculatee) {
   firstPlayer.innerHTML += player1;
   secPlayer.innerHTML += player2;
   score.innerHTML += calculat+"😒";
